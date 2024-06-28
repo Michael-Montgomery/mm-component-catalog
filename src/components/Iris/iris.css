@@ -1,0 +1,126 @@
+header {
+    /* height: 70px; */
+    width: 100vw;
+    /* display: flex; */
+    background-color: var(--primary);
+    transition: all .5s;
+}
+
+header nav {
+    text-align: center;
+    line-height: 70px;
+}
+
+#header-logo {
+    height: 50px;
+    width: 50px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+    margin: 0 4vw;
+    font-size: 1.3em;
+    padding: 21px 6px;
+    opacity: .85;
+    /* transition: all .4s; */
+}
+
+header nav a:not(header nav a.active):hover {
+    /* text-decoration: underline; */
+    opacity: 1;
+}
+
+header nav a.active {
+    background-color: white;
+    opacity: 1;
+    color: var(--primary);
+}
+
+header nav button {
+    /* float: right; */
+    font-size: 1.3em;
+    background-color: var(--primary);
+    color: white;
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 5px;
+    margin-top: 15px;
+    transition: all .4s;
+    margin-right: 10px;
+}
+
+header nav button:hover {
+    color: var(--primary);
+    background-color: white;
+}
+
+#responsive-menu-btn {
+    float: right;
+    border:none;
+    font-size: 1.8em;
+    display: none;
+
+    
+}
+
+#responsive-menu-list-wrapper {
+    display: none;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    
+    #responsive-menu-btn {
+        display: block;
+        background-color: var(--primary);
+        color: white;
+    }
+
+    header nav a {
+        display: none;
+    }
+
+    #header-cta-btn {
+        display: none;
+    }
+
+    #responsive-menu-list-wrapper {
+        padding-top: 80px;
+        /* background-color: red; */
+        display: block;
+        padding-bottom: 15px;
+        
+    }
+
+    #responsive-menu-list {
+        list-style-type: none;
+        display: block;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    #responsive-menu-list li {
+
+    }
+
+    #responsive-menu-list li a {
+        color: white;
+        display: inline;
+        font-size: 1.5em;
+    }
+
+    #responsive-menu-list li a.active {
+        border-radius: 8px;
+        color: var(--primary);
+        padding: 5px 10px;
+    }
+
+  }
